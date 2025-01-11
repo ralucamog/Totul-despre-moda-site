@@ -1,0 +1,25 @@
+$hamburger-height: 2rem;
+
+#hamburger {
+    display: block;
+
+    img {
+        height: $hamburger-height;
+    }
+}
+
+ul {
+    li {
+        .meniu {
+            display: none;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}
+
+#ch-menu {
+    &:checked+ul.meniu {
+        display: block;
+    }
+}
